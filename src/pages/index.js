@@ -35,6 +35,14 @@ export default function Home() {
       </div>
       <div className="contact-content">
         <a href="mailto:contact@phbomfim.dev"><h1>Contact Me</h1></a>
+        <p>
+          Contact me ! Contact me ! Contact me ! Contact me !
+          Contact me ! Contact me ! Contact me ! Contact me !
+          Contact me ! Contact me ! Contact me ! Contact me !
+          Contact me ! Contact me ! Contact me ! Contact me !
+          Contact me ! Contact me ! Contact me ! Contact me ! 
+          Contact me ! Contact me ! Contact me !
+        </p>
       </div>
     </Layout>
   );
