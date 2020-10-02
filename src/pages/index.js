@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import phbomfim from "../images/phbomfim.jpg"
+import phbomfim from "../images/phbomfim.png"
 
 export default function Home() {
   return (

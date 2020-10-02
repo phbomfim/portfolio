@@ -9,9 +9,9 @@ export default function Header(){
         <img className="logo" src={phdevlogo} alt="" />
       </Link>
       <ul>
-        <a to="/" className="head-link">Home</a>
-        <a to="/" className="head-link">About</a>
-        <a to="/" className="head-link">Contact</a>
+        <a to="/" className="head-link">Home<div class="barra"></div></a>
+        <a to="/" className="head-link1">About<div class="barra1"></div></a>
+        <a to="/" className="head-link2">Contact<div class="barra2"></div></a>
       </ul>
     </header>
   )
