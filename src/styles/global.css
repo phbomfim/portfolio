@@ -23,36 +23,40 @@ h1{
 }
 
 header{
+  width:100%;
+  top: 0;
   margin-bottom: 0.5em;
+  padding:0.5em 1em;
+  vertical-align: middle;
+
   background-color: rgba(255, 255, 255);
-  padding-bottom: 0;
-  padding-top: 0;
-  padding-left: 1%;
-  padding-right: 1%;
   box-shadow: 1px 1px 12px 4px #3e408414;
+
+  /* position: fixed; */
 }
 
-.head-link{
+.head-link, .head-link1, .head-link2{
   display: inline-block;
   margin-right: 1em;
 }
 
-a.head-link {
+a.head-link , a.head-link1, a.head-link2{
   opacity: 0.7;
   transition: 0.3s;
   text-decoration: none;
   cursor: pointer;
 }
 
-a.head-link:hover{
+a.head-link:hover, a.head-link1:hover, a.head-link2:hover{
   opacity: 1.2;
 }
 
 ul{
   float: right;
-  height: 3.3em;
   display: flex;
   align-items: center;
+  padding-top: 13px;
+  margin-bottom: 0px;
 }
 
 footer{
@@ -84,12 +88,31 @@ footer{
   margin-right: auto;
   margin-top: 2em;
   max-width: 18%;
+  padding: 3px;
 
   border-radius: 50%;
+  border: solid #000000e0 2.5px;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition-duration: 0.4s
 }
 
 .avatar:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.barra, .barra1, .barra2{
+  height: 2px;
+  width: 100%;
+  background-color: rgb(79, 19, 114);
+  text-align: right;
+  display:none;
+}
+
+.head-link:hover .barra, .head-link1:hover .barra1, .head-link2:hover .barra2{
+    display: block;
+}
+
+.info-content{
+  padding-top: 0.3em;
 }
