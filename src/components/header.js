@@ -1,23 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
-import phdevlogo from "../images/phdevlogo.png"
 
-const ListLink = props => (
-  <li>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+import phdevlogo from "../images/phdevlogo.png"
+import github from "../images/github.svg"
+import linkedin from "../images/linkedin.svg"
+import stackoverflow from "../images/stackoverflow.svg"
+import freecodecamp from "../images/freecodecamp.svg"
 
 export default function Header(){
   return(
     <header>
-      <Link to="https://github.com/phbomfim/">
+      <Link to="">
         <img className="logo" src={phdevlogo} alt="" />
       </Link>
-      <ul>
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/">About</ListLink>
-        <ListLink to="/">Contact</ListLink>
+      <ul className="list-links">
+        <Link to="https://github.com/phbomfim/"  target="_blank">
+          <img className="logo-link" src={github} alt="" />
+        </Link>
+        <Link to="https://www.linkedin.com/in/phbomfim/"  target="_blank">
+          <img className="logo-link" src={linkedin} alt="" />
+        </Link>
+        <Link to="https://pt.stackoverflow.com/users/86147/paulo-bomfim?tab=profile"  target="_blank">
+          <img className="logo-link" src={stackoverflow} alt="" />
+        </Link>
+        <Link to="https://www.freecodecamp.org/phbomfim"  target="_blank">
+          <img className="logo-link" src={freecodecamp} alt="" />
+        </Link>
       </ul>
     </header>
   )
