@@ -10,7 +10,7 @@ import freecodecamp from "../images/freecodecamp.svg"
 export default function Header(){
   return(
     <header>
-      <Link to="">
+      <Link to="#">
         <img className="logo" src={phdevlogo} alt="" />
       </Link>
       <ul className="list-links">
