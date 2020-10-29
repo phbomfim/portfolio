@@ -15,7 +15,7 @@ header{
   box-shadow: 1px 1px 12px 4px #3e408414;
 
   position: fixed;
-
+  z-index: 2;
 }
 
 footer{
@@ -156,6 +156,7 @@ a.head-link:hover, a.head-link1:hover, a.head-link2:hover{
   width: 1em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  vertical-align: middle;
 }
 
 .logo:hover, .logo-link:hover{
@@ -189,7 +190,13 @@ a.head-link:hover, a.head-link1:hover, a.head-link2:hover{
   clear: both;
 }
 
+.row{
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
 .column {
+  margin-top: 2em;
   float: left;
   width: 33.33%;
   padding: 10px;

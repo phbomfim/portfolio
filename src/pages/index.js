@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 
 import phbomfim from "../images/phbomfim.png"
 
+import code from "../images/code.svg"
+import telegram from "../images/telegram.svg"
+import lines from "../images/lines.svg"
 import css3 from "../images/css3.svg"
 import gatsby from "../images/gatsby.svg"
 import javascript from "../images/javascript.svg"
@@ -40,7 +43,7 @@ export default function Home() {
         If that's you and you're looking for the right guy for a job, continue reading to get to know me and see if we're a match.</p>
       </div>
       <div className="skills row">
-        <h1>Skillset</h1>
+        <h1><img className="logo-tag" src={code}/>Skillset</h1>
         <div className="column">
           <h3>Front-end development</h3>
           <ul className="list-tags">
@@ -77,7 +80,7 @@ export default function Home() {
         </div>      
       </div>
       <div className="about">
-        <h1>About Me</h1>
+        <h1><img className="logo-tag" src={lines}/>About Me</h1>
         <p className="about-text">
           I'm a Software Enginer, always open to new ideas !
           Freelancer, student and enthusiastic about change. From Salvador, Brazil, developing applications since 2016.
@@ -88,11 +91,11 @@ export default function Home() {
           In 2018 I made my first contact with a programming team, at OmniCode Solutions. It was this place that I had contatc with the main tecnologies used by the main programmers in the world.
           Since then I don't stop to study and building solutions to the most diverse clients.
           In 2019 I started participating in volunteer projects to teach programming to young people. I really love teach.
-          And 2019 I also created my blog, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
+          And 2019 I also created <a href="https://phbomfim.dev" target="_blank">my blog</a>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
         </p>
       </div>
       <div className="contact">
-        <h2>Want to get in touch?</h2>
+        <h2>Want to get in touch ?<img className="logo-tag" src={telegram}/> </h2>
         <p>Shoot me an email and I'll get back to you soon 🙂 </p>
         <div className="contact-box"><a href="mailto:contact@phbomfim.dev"><h4 className="ct">Get In Touch </h4></a></div>
       </div>
