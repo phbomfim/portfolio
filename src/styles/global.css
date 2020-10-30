@@ -211,7 +211,7 @@ a.head-link:hover, a.head-link1:hover, a.head-link2:hover{
 /* FIX TAG COLORS*/
 
 .github, .linkedin, .stackoverflow, .freecodecamp{
-  filter: invert(91%) sepia(93%) saturate(4663%) hue-rotate(46deg) brightness(93%) contrast(86%);
+  filter: invert(97%) sepia(6%) saturate(945%) hue-rotate(53deg) brightness(94%) contrast(102%);
 }
 
 .bootstrap{
