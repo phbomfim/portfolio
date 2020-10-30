@@ -10,21 +10,21 @@ import freecodecamp from "../images/freecodecamp.svg"
 export default function Header(){
   return(
     <header>
-      <Link to="">
+      <Link to="#">
         <img className="logo" src={phdevlogo} alt="" />
       </Link>
       <ul className="list-links">
         <Link to="https://github.com/phbomfim/"  target="_blank">
-          <img className="logo-link" src={github} alt="" />
+          <img className="logo-link github" src={github} alt="" />
         </Link>
         <Link to="https://www.linkedin.com/in/phbomfim/"  target="_blank">
-          <img className="logo-link" src={linkedin} alt="" />
+          <img className="logo-link linkedin" src={linkedin} alt="" />
         </Link>
         <Link to="https://pt.stackoverflow.com/users/86147/paulo-bomfim?tab=profile"  target="_blank">
-          <img className="logo-link" src={stackoverflow} alt="" />
+          <img className="logo-link stackoverflow" src={stackoverflow} alt="" />
         </Link>
         <Link to="https://www.freecodecamp.org/phbomfim"  target="_blank">
-          <img className="logo-link" src={freecodecamp} alt="" />
+          <img className="logo-link freecodecamp" src={freecodecamp} alt="" />
         </Link>
       </ul>
     </header>
