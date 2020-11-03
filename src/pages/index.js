@@ -83,7 +83,7 @@ export default function Home() {
         <h1><img className="logo-tag" src={lines}/>About Me</h1>
         <div className="about-text">
           <p>
-            I'm a Software Enginer, always open to new ideas !
+            I'm a Software Engineer, always open to new ideas !
             Freelancer, student and enthusiastic about change. From Salvador, Brazil, developing applications since 2014 and listening to music since 1996 🙃
           </p>
           <p>
@@ -92,7 +92,7 @@ export default function Home() {
             There was not much documentation in Portuguese, so I had to learn English in a "forced" way.
           </p>
           <p>
-            When I started in a university I developed logical programs and participated in several programming competitions.
+            When I started in the Federal University of Bahia, I developed logical programs and participated in several programming competitions.
             The study of logic took me to another level, giving me more courage and more desire to continue studying.
             Shortly thereafter I entered the world of web programming, developing apps, websites, dashboards and a lot of programs.
           </p>
@@ -102,11 +102,11 @@ export default function Home() {
           </p>
           <p>
             In 2018 I made my first contact with a programming team, at OmniCode Solutions. 
-            It was this place that I had contatc with the main tecnologies used by the main programmers in the world, in addition to making contact with customers worldwide.
-            Since then I don't stop to study and building solutions to the most diverse clients.
+            It was this place that I had contact with the main technologies used by the main programmers in the world, in addition to making contact with customers worldwide.
+            Since then I don't stopped studying and building solutions for the most diverse clients.
           </p>
           <p>
-            In 2019 I started participating in volunteer projects to teach programming to young people. I really love teach.
+            In 2019 I started participating in volunteer projects to teach programming to young people. I really love to teach.
             I also participated in programming events as an instructor, working mainly with Ruby on Rails.
             And 2019 I also created <strong><a href="https://phbomfim.dev" target="_blank">my blog</a></strong>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
           </p>
