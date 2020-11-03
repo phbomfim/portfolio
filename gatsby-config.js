@@ -1,11 +1,22 @@
+const siteConfig = require("./config")
+
 module.exports = {
   siteMetadata: {
-    title: `Paulo Bomfim - Software Engineer`,
-    siteUrl: `https://phbomfim.dev`,
-    author: `phbomfim`,
-    description: `Paulo Bomfim - Portifolio page`,
+    url: siteConfig.url,
+    title: siteConfig.title,
+    tagline: siteConfig.tagline,
+    description: siteConfig.description,
+    author: siteConfig.author.name,
+    contacts: {
+      linkedin: siteConfig.author.contacts.linkedin,
+      github: siteConfig.author.contacts.github,
+      stackoverflow: siteConfig.author.contacts.stackoverflow,
+      freecodecamp: siteConfig.author.contacts.freecodecamp,
+      twitter: siteConfig.author.contacts.twitter,
+    },
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
