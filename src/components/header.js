@@ -14,16 +14,16 @@ export default function Header(){
         <img className="logo" src={phdevlogo} alt="" />
       </Link>
       <ul className="list-links">
-        <Link to="https://github.com/phbomfim/"  target="_blank">
+        <Link to="https://github.com/phbomfim/"  target="_blank" rel="noreferrer">
           <img className="logo-link github" src={github} alt="" />
         </Link>
-        <Link to="https://www.linkedin.com/in/phbomfim/"  target="_blank">
+        <Link to="https://www.linkedin.com/in/phbomfim/"  target="_blank" rel="noreferrer">
           <img className="logo-link linkedin" src={linkedin} alt="" />
         </Link>
-        <Link to="https://pt.stackoverflow.com/users/86147/paulo-bomfim?tab=profile"  target="_blank">
+        <Link to="https://pt.stackoverflow.com/users/86147/paulo-bomfim?tab=profile"  target="_blank" rel="noreferrer">
           <img className="logo-link stackoverflow" src={stackoverflow} alt="" />
         </Link>
-        <Link to="https://www.freecodecamp.org/phbomfim"  target="_blank">
+        <Link to="https://www.freecodecamp.org/phbomfim"  target="_blank" rel="noreferrer">
           <img className="logo-link freecodecamp" src={freecodecamp} alt="" />
         </Link>
       </ul>
