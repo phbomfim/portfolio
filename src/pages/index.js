@@ -108,7 +108,7 @@ export default function Home() {
           <p>
             In 2019 I started participating in volunteer projects to teach programming to young people. I really love to teach.
             I also participated in programming events as an instructor, working mainly with Ruby on Rails.
-            And 2019 I also created <strong><a href="https://phbomfim.dev" target="_blank">my blog</a></strong>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
+            And 2019 I also created <strong><a href="https://blog.phbomfim.dev" target="_blank">my blog</a></strong>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
           </p>
           <p>
             <strong>I believe that education is the basis for human and living development focused on this! ✊🏾 </strong>
