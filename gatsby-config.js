@@ -3,7 +3,7 @@ module.exports = {
     title: `Paulo Bomfim - Software Engineer`,
     siteUrl: `https://phbomfim.dev`,
     author: `phbomfim`,
-    description: `Paulo Bomfim - Portifolio page`,
+    description: `Paulo Bomfim - Portfolio page`,
   },
   plugins: [
     `gatsby-transformer-sharp`,
