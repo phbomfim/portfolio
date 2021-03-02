@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "phbomfim-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A simple portfolio project build to new developers",
+  "version": "1.0.0",
   "license": "0BSD",
+  "author": "Paulo Bomfim <paulobommfim@gmail.com> (https://phbomfim.dev)",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -30,11 +31,18 @@
   "devDependencies": {
     "prettier": "2.1.1"
   },
+  "keywords": [
+    "gatsby",
+    "portfolio",
+    "profile",
+    "landingpage"
+  ],
+  "homepage": "https://github.com/phbomfim/portfolio/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/phbomfim/portfolio/"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/phbomfim/portfolio/issues"
   }
 }
