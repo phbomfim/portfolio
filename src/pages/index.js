@@ -31,19 +31,19 @@ export default function Home() {
   return (
     <Layout>
       <div className="content">
-        <img className="avatar" src={phbomfim} />
+        <img className="avatar" src={phbomfim} alt="perfil_photo"/>
         <h1>Paulo Henrique Bomfim </h1>
         <h2>Full-stack engineer</h2>
       </div>
       <div className="resume">
-        <p>Hey there—I'm Paulo 👋🏾 </p>
+        <p>Hey there—I'm Paulo <span role="img" aria-label="claps">👋🏾</span> </p>
         <p>I'm a full-stack developer full of passion for all aspects of building great software. 
         I've worked on projects of various scales, both solo and as part of a team.</p>
         <p>I'm keen to collaborate with passionate people working on interesting projects. 
         If that's you're looking for the right guy for a job, continue reading to get to know me and see if we're a match.</p>
       </div>
       <div className="skills row">
-        <h1><img className="logo-tag" src={code}/>Skillset</h1>
+        <h1><img className="logo-tag" src={code} alt="logo to skills"/>Skillset</h1>
         <div className="column">
           <h3>Front-end development</h3>
           <ul className="list-tags">
@@ -80,11 +80,11 @@ export default function Home() {
         </div>      
       </div>
       <div className="about">
-        <h1><img className="logo-tag" src={lines}/>About Me</h1>
+        <h1><img className="logo-tag" src={lines} alt="logo to about me"/>About Me</h1>
         <div className="about-text">
           <p>
             I'm a Software Engineer, always open to new ideas !
-            Freelancer, student and enthusiastic about change. From Salvador, Brazil, developing applications since 2014 and listening to music since 1996 🙃
+            Freelancer, student and enthusiastic about change. From Salvador, Brazil, developing applications since 2014 and listening to music since 1996 <span role="img" aria-label="smile2">🙃</span>
           </p>
           <p>
             I started in this world when I was 14 years old, developing personal games servers and creating cheats for them.  
@@ -108,19 +108,19 @@ export default function Home() {
           <p>
             In 2019 I started participating in volunteer projects to teach programming to young people. I really love to teach.
             I also participated in programming events as an instructor, working mainly with Ruby on Rails.
-            And 2019 I also created <strong><a href="https://blog.phbomfim.dev" target="_blank">my blog</a></strong>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
+            And 2019 I also created <strong><a href="https://blog.phbomfim.dev" target="_blank" rel="noreferrer">my blog</a></strong>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
           </p>
           <p>
-            <strong>I believe that education is the basis for human and living development focused on this! ✊🏾 </strong>
+            <strong>I believe that education is the basis for human and living development focused on this! <span role="img" aria-label="hand">✊🏾</span></strong>
           </p>
           <p>
-            If you want to see my complete curriculum, access the <strong><a href="https://resume.phbomfim.dev" target="_blank">English</a></strong> or <strong><a href="https://curriculo.phbomfim.dev" target="_blank">Portuguese</a></strong> version.
+            If you want to see my complete curriculum, access the <strong><a href="https://resume.phbomfim.dev" target="_blank" rel="noreferrer">English</a></strong> or <strong><a href="https://curriculo.phbomfim.dev" target="_blank" rel="noreferrer">Portuguese</a></strong> version.
           </p>
         </div>
       </div>
       <div className="contact">
-        <h2>Want to get in touch ?<img className="logo-tag" src={telegram}/> </h2>
-        <p>Shoot me an email and I'll get back to you soon 🙂 </p>
+        <h2>Want to get in touch ?<img className="logo-tag" src={telegram} alt="get logo"/> </h2>
+        <p>Shoot me an email and I'll get back to you soon <span role="img" aria-label="smile">🙂</span></p>
         <div className="contact-box"><a href="mailto:contact@phbomfim.dev"><h4 className="ct">Get In Touch </h4></a></div>
       </div>
     </Layout>
