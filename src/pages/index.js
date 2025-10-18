@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import phbomfim from "../images/phbomfim.png"
 import phbomfim2 from "../images/phbomfim2.png"
 
 import code from "../images/code.svg"
@@ -25,6 +24,20 @@ import mysql from "../images/mysql.svg"
 import netlify from "../images/netlify.svg"
 import postgresql from "../images/postgresql.svg"
 import tailwindcss from "../images/tailwindcss.svg"
+import node from "../images/node-js.svg"
+import clojure from "../images/clojure.svg"
+import dart from "../images/dart.svg"
+import java from "../images/java.svg"
+import python from "../images/python.svg"
+import aws from "../images/aws.svg"
+import dynamo from "../images/dynamo-db.svg"
+import mongodb from "../images/mongo-db.svg"
+import redis from "../images/redis.svg"
+import google_cloud from "../images/google-cloud.svg"
+import kubernetes from "../images/kubernetes.svg"
+import azure from "../images/azure.svg"
+import sqlite from "../images/sqlite.svg"
+import datomic from "../images/datomic.svg"
 
 export default function Home() {
   return (
@@ -60,37 +73,37 @@ export default function Home() {
           <h3>Programming languages</h3>
           <ul className="list-tags">
             <li><img className="logo-tag cplusplus" src={cplusplus} alt="" /> C++ (CPlusPlus) </li>
-            <li> Clojure </li>
-            <li>Dart</li>
-            <li> Java </li>
-            <li> Node.js </li>
-            <li> Python </li>
+            <li><img className="logo-tag clojure" src={clojure} alt="" /> Clojure </li>
+            <li><img className="logo-tag dart" src={dart} alt="" /> Dart </li>
+            <li><img className="logo-tag java" src={java} alt="" /> Java </li>
+            <li><img className="logo-tag node" src={node} alt="" /> Node.js </li>
+            <li><img className="logo-tag python" src={python} alt="" /> Python </li>
             <li><img className="logo-tag ruby" src={ruby} alt="" />  Ruby </li>
           </ul>
         </div>
         <div className="column">
           <h3>Database and Storage</h3>
           <ul className="list-tags">
-            <li>AWS S3</li>
-            <li>Datomic</li>
-            <li>DynamoDB</li>
+            <li><img className="logo-tag aws" src={aws} alt="" /> AWS S3</li>
+            <li><img className="logo-tag datomic" src={datomic} alt="" /> Datomic</li>
+            <li><img className="logo-tag dynamo" src={dynamo} alt="" /> DynamoDB</li>
             <li><img className="logo-tag graphql" src={graphql} alt="" /> GraphQL </li>
-            <li>MongoDB</li>
+            <li><img className="logo-tag mongodb" src={mongodb} alt="" /> MongoDB</li>
             <li><img className="logo-tag mysql" src={mysql} alt="" /> MySQL </li>
             <li><img className="logo-tag postgresql" src={postgresql} alt="" /> PostgreSQL </li>
-            <li>Redis</li>
-            <li>SQLite</li>
+            <li><img className="logo-tag redis" src={redis} alt="" /> Redis</li>
+            <li><img className="logo-tag sqlite" src={sqlite} alt="" /> SQLite</li>
           </ul>
         </div>
         <div className="column">
           <h3>Cloud and DevOps</h3>
           <ul className="list-tags">
-            <li>Azure</li>
-            <li>AWS</li>
+            <li><img className="logo-tag azure" src={azure} alt="" /> Azure</li>
+            <li><img className="logo-tag aws" src={aws} alt="" /> AWS</li>
             <li><img className="logo-tag docker" src={docker} alt="" /> Docker </li>
-            <li>Google Cloud</li>
+            <li><img className="logo-tag google_cloud" src={google_cloud} alt="" /> Google Cloud</li>
             <li><img className="logo-tag heroku" src={heroku} alt="" /> Heroku </li>
-            <li>Kubernetes</li>
+            <li><img className="logo-tag kubernetes" src={kubernetes} alt="" /> Kubernetes</li>
             <li><img className="logo-tag linux" src={linux} alt="" />  Linux </li>
             <li><img className="logo-tag netlify" src={netlify} alt="" /> Netlify </li>    
           </ul>
