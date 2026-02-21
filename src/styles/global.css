@@ -1,5 +1,22 @@
+/* --- Color palette (edit these to try alternatives) ---
+ * Refined (default): purple brand + soft off-white background
+ * Warm: --bg: #f6f5f3; --accent: #5c1893; --accent-dark: #451a6b;
+ * Cool:  --bg: #f4f6f9; --accent: #4a148c; --accent-dark: #1a237e;
+ */
+:root {
+  --color-bg: #f8f7fa;
+  --color-accent: #4f1372;
+  --color-accent-dark: #3d0f59;
+  --color-accent-text: #fff;
+  --color-shadow: rgba(62, 64, 132, 0.08);
+  /* Header: left logo (green+purple) stays as-is; right icons use this for a unified light look */
+  --header-icon-filter: brightness(0) invert(1);
+  --header-icon-opacity: 0.92;
+  --header-icon-opacity-hover: 1;
+}
+
 html {
-  background-color: rgba(255, 255, 255, 0.452);
+  background-color: var(--color-bg);
   align-items: center;
   scroll-behavior: smooth;
 }
@@ -10,16 +27,16 @@ header{
   margin-bottom: 0.5em;
   padding:0.5em 1em;
   vertical-align: middle;
-  
-  background-color: rgb(79, 19, 114, 0.9);
-  box-shadow: 1px 1px 12px 4px #3e408414;
+
+  background-color: var(--color-accent);
+  box-shadow: 0 2px 12px 4px var(--color-shadow);
 
   position: fixed;
   z-index: 2;
 }
 
 footer{
-  color: white;
+  color: var(--color-accent-text);
   margin-top: 3.5em;
   padding-bottom: 1%;
   padding-top: 1%;
@@ -27,7 +44,7 @@ footer{
   padding-right: 1%;
   text-align: center;
 
-  background-color: rgb(79, 19, 114);
+  background-color: var(--color-accent-dark);
 }
 
 img, a{
@@ -64,8 +81,45 @@ p{
 
 .resume{
   margin-top: 4em;
-  margin-bottom: 7em;
+  margin-bottom: 4em;
 }
+
+.strengths{
+  margin-top: 2em;
+  margin-bottom: 6em;
+  text-align: center;
+}
+
+.strengths-list{
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 42em;
+  text-align: left;
+}
+
+.strengths-list li{
+  margin-bottom: 1.25em;
+  line-height: 1.5;
+  padding-left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75em;
+}
+
+.strengths-list li .strength-icon{
+  flex-shrink: 0;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 0.2em;
+}
+
+.strengths-list .strength-icon-architecture{ filter: invert(23%) sepia(66%) saturate(1575%) hue-rotate(181deg) brightness(95%) contrast(105%); }
+.strengths-list .strength-icon-design{ filter: invert(26%) sepia(98%) saturate(7053%) hue-rotate(309deg) brightness(88%) contrast(109%); }
+.strengths-list .strength-icon-scale{ filter: invert(47%) sepia(50%) saturate(836%) hue-rotate(163deg) brightness(101%) contrast(93%); }
+.strengths-list .strength-icon-docs{ filter: invert(30%) sepia(31%) saturate(5049%) hue-rotate(188deg) brightness(87%) contrast(83%); }
+.strengths-list .strength-icon-communication{ filter: invert(14%) sepia(50%) saturate(5761%) hue-rotate(264deg) brightness(78%) contrast(124%); }
 
 .info, .resume , .content{
   text-align: center;
@@ -208,8 +262,22 @@ a.head-link:hover, a.head-link1:hover, a.head-link2:hover{
   }
 }
 
-/* FIX TAG COLORS*/
+/* Header icons: right-side social SVGs — clean white to pair with left logo (green+purple) on purple header */
+header .github,
+header .linkedin,
+header .stackoverflow,
+header .freecodecamp {
+  filter: var(--header-icon-filter);
+  opacity: var(--header-icon-opacity);
+}
+header a:hover .github,
+header a:hover .linkedin,
+header a:hover .stackoverflow,
+header a:hover .freecodecamp {
+  opacity: var(--header-icon-opacity-hover);
+}
 
+/* FIX TAG COLORS (skills section and elsewhere) */
 .github, .linkedin, .stackoverflow, .freecodecamp{
   filter: invert(97%) sepia(6%) saturate(945%) hue-rotate(53deg) brightness(94%) contrast(102%);
 }

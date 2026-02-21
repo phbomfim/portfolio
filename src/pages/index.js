@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import phbomfim2 from "../images/phbomfim2.png"
+import phbomfim2 from "../images/phbomfim3.png"
 
 import code from "../images/code.svg"
 import telegram from "../images/telegram.svg"
@@ -45,14 +45,41 @@ export default function Home() {
       <div className="content">
         <img className="avatar" src={phbomfim2} alt="perfil_photo"/>
         <h1>Paulo Henrique Bomfim </h1>
-        <h2>Software Engineer</h2>
+        <h2>Senior Software Engineer</h2>
       </div>
       <div className="resume">
-        <p>Hey there—I'm Paulo <span role="img" aria-label="claps">👋🏾</span> </p>
-        <p>I'm a software engineer full of passion for all aspects of building great software. 
-        I've worked on projects of various scales, both solo and as part of a team.</p>
-        <p>I'm keen to collaborate with passionate people working on interesting projects. 
-        If that's you're looking for the right guy for a job, continue reading to get to know me and see if we're a match.</p>
+        <p>Hey there—I'm Paulo Henrique <span role="img" aria-label="claps">👋🏾</span> </p>
+        <p>I'm a Senior Software Engineer with a strong track record in software architecture, cloud solutions, and distributed systems. 
+          I've led work on large-scale systems—owning technical direction, driving scalability and performance, and turning complex trade-offs into clear, documented decisions. 
+          I'm used to aligning with product and stakeholders across time zones and enjoy mentoring and raising the bar with the teams I work with. 
+          I'm always open to new challenges and to collaborating with people who care about building things that last. 
+        </p>
+        <p>If that resonates, read on to get to know me better <span role="img" aria-label="smile"> 🙂 </span> </p>
+      </div>
+      <div className="strengths">
+        <h1 style={{ marginBottom: '40px', marginTop: '20px' }}><img className="logo-tag" src={lines} alt="" />Core Strengths</h1>
+        <ul className="strengths-list">
+          <li>
+            <img className="logo-tag strength-icon strength-icon-architecture" src={code} alt="" aria-hidden="true" />
+            <span><strong>Software architecture</strong> — Designing and evolving systems that align with business goals and stand the test of scale.</span>
+          </li>
+          <li>
+            <img className="logo-tag strength-icon strength-icon-design" src={graphql} alt="" aria-hidden="true" />
+            <span><strong>System design</strong> — Breaking down complex problems into clear, maintainable solutions and guiding implementation.</span>
+          </li>
+          <li>
+            <img className="logo-tag strength-icon strength-icon-scale" src={kubernetes} alt="" aria-hidden="true" />
+            <span><strong>Scalability and performance</strong> — Identifying bottlenecks, studying traffic patterns, making data-driven optimizations, and planning for growth.</span>
+          </li>
+          <li>
+            <img className="logo-tag strength-icon strength-icon-docs" src={lines} alt="" aria-hidden="true" />
+            <span><strong>Software documentation</strong> — Capturing architecture decisions, APIs, playbooks, and guidelines so teams can move fast and onboard smoothly.</span>
+          </li>
+          <li>
+            <img className="logo-tag strength-icon strength-icon-communication" src={telegram} alt="" aria-hidden="true" />
+            <span><strong>Communication and stakeholder relationship</strong> — Aligning with product, leadership, and remote teams across time zones and cultures.</span>
+          </li>
+        </ul>
       </div>
       <div className="skills row">
         <h1><img className="logo-tag" src={code} alt="logo to skills"/>Skillset</h1>
@@ -65,7 +92,7 @@ export default function Home() {
             <li><img className="logo-tag js" src={javascript} alt="" /> Javascript</li>
             <li><img className="logo-tag php" src={php} alt="" /> PHP </li>        
             <li><img className="logo-tag react" src={react} alt="" /> React </li>
-            <li><img className="logo-tag rails" src={rubyonrails} alt="" /> Ruby on Rails </li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag rails" src={rubyonrails} alt="" /> Ruby on Rails </li>
             <li><img className="logo-tag tailwindcss" src={tailwindcss} alt="" /> Tailwind CSS </li>
           </ul>
         </div>
@@ -73,24 +100,23 @@ export default function Home() {
           <h3>Programming languages</h3>
           <ul className="list-tags">
             <li><img className="logo-tag cplusplus" src={cplusplus} alt="" /> C++ (CPlusPlus) </li>
-            <li><img className="logo-tag clojure" src={clojure} alt="" /> Clojure </li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag clojure" src={clojure} alt="" /> Clojure </li>
             <li><img className="logo-tag dart" src={dart} alt="" /> Dart </li>
             <li><img className="logo-tag java" src={java} alt="" /> Java </li>
             <li><img className="logo-tag node" src={node} alt="" /> Node.js </li>
             <li><img className="logo-tag python" src={python} alt="" /> Python </li>
-            <li><img className="logo-tag ruby" src={ruby} alt="" />  Ruby </li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag ruby" src={ruby} alt="" />  Ruby </li>
           </ul>
         </div>
         <div className="column">
           <h3>Database and Storage</h3>
           <ul className="list-tags">
-            <li><img className="logo-tag aws" src={aws} alt="" /> AWS S3</li>
-            <li><img className="logo-tag datomic" src={datomic} alt="" /> Datomic</li>
-            <li><img className="logo-tag dynamo" src={dynamo} alt="" /> DynamoDB</li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag datomic" src={datomic} alt="" /> Datomic</li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag dynamo" src={dynamo} alt="" /> DynamoDB</li>
             <li><img className="logo-tag graphql" src={graphql} alt="" /> GraphQL </li>
             <li><img className="logo-tag mongodb" src={mongodb} alt="" /> MongoDB</li>
             <li><img className="logo-tag mysql" src={mysql} alt="" /> MySQL </li>
-            <li><img className="logo-tag postgresql" src={postgresql} alt="" /> PostgreSQL </li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag postgresql" src={postgresql} alt="" /> PostgreSQL </li>
             <li><img className="logo-tag redis" src={redis} alt="" /> Redis</li>
             <li><img className="logo-tag sqlite" src={sqlite} alt="" /> SQLite</li>
           </ul>
@@ -99,12 +125,11 @@ export default function Home() {
           <h3>Cloud and DevOps</h3>
           <ul className="list-tags">
             <li><img className="logo-tag azure" src={azure} alt="" /> Azure</li>
-            <li><img className="logo-tag aws" src={aws} alt="" /> AWS</li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag aws" src={aws} alt="" /> AWS</li>
             <li><img className="logo-tag docker" src={docker} alt="" /> Docker </li>
             <li><img className="logo-tag google_cloud" src={google_cloud} alt="" /> Google Cloud</li>
             <li><img className="logo-tag heroku" src={heroku} alt="" /> Heroku </li>
-            <li><img className="logo-tag kubernetes" src={kubernetes} alt="" /> Kubernetes</li>
-            <li><img className="logo-tag linux" src={linux} alt="" />  Linux </li>
+            <li style={{ fontWeight: 'bold' }}><img className="logo-tag kubernetes" src={kubernetes} alt="" /> Kubernetes</li>
             <li><img className="logo-tag netlify" src={netlify} alt="" /> Netlify </li>    
           </ul>
         </div>      
@@ -113,39 +138,39 @@ export default function Home() {
         <h1><img className="logo-tag" src={lines} alt="logo to about me"/>About Me</h1>
         <div className="about-text">
           <p>
-            I'm a Software Engineer, always open to new ideas !
-            Freelancer, student and enthusiastic about change. From Salvador, Brazil, developing applications since 2014 and listening to music since 1996 <span role="img" aria-label="smile2">🙃</span>
+            I'm a Software Engineer, always open to new ideas! Freelancer, student, and enthusiastic about change. 
+            From Salvador, Brazil, developing applications since 2014 and listening to music since 1996 <span role="img" aria-label="smile">🙃</span>
           </p>
           <p>
-            I started in this world when I was 14 years old, developing personal games servers and creating cheats for them.  
-            I spent many hours watching tutorials, reading files, discovering features and testing various programs.
+            I started in this world when I was 14, developing personal game servers and creating cheats for them. 
+            I spent many hours watching tutorials, reading files, discovering features, and testing various programs. 
             There was not much documentation in Portuguese, so I had to learn English in a "forced" way.
           </p>
           <p>
-            When I started in the Federal University of Bahia (2016), I developed logical programs and participated in several programming competitions.
-            The study of logic took me to another level, giving me more courage and more desire to continue studying.
-            Shortly thereafter I entered the world of web programming, developing apps, websites, dashboards and a lot of programs.
+            When I started at the Federal University of Bahia (2016), I developed logical programs and participated in several programming competitions. 
+            The study of logic took me to a new level, giving me more courage and a stronger desire to continue studying. 
+            Shortly thereafter, I entered the world of web development, developing apps, websites, dashboards, and more.
           </p>
           <p>
-            In 2017 I made my first contact with a company and I created a data controller for more than 200 user to use directly.
-            I faced many difficulties, considering that every study was done individually, without the presence of a supervisor.
+            In 2017, I made my first contact with a company, and I created a data controller for more than 200 users to use directly. 
+            I faced many difficulties because every study was conducted individually, without a supervisor.
           </p>
           <p>
-            In 2018 I made my first contact with a programming team, at OmniCode Solutions. 
-            It was this place that I had contact with the main technologies used by the main programmers in the world, in addition to making contact with customers worldwide.
-            Since then I don't stopped studying and building solutions for the most diverse clients.
+            In 2018, I first contacted a programming team at OmniCode Solutions. 
+            It was through this place that I came into contact with the main technologies used by the world's leading programmers, as well as with customers worldwide. 
+            Since then, I haven't stopped studying and building solutions for the most diverse clients.
           </p>
           <p>
-            In 2019 I started participating in volunteer projects to teach programming to young people. I really love to teach.
-            I also participated in programming events as an instructor, working mainly with Ruby on Rails.
-            And 2019 I also created <strong><a href="https://blog.phbomfim.dev" target="_blank" rel="noreferrer">my blog</a></strong>, where I try to pass on my knowledge to the world. Whenever possible I make posts about the most diverse contents.
+            In 2019, I began volunteering to teach programming to young people. I really love to teach. 
+            I also participated in programming events as an instructor, working mainly with Ruby on Rails. 
+            In 2019, I also created <strong><a href="https://blog.phbomfim.dev" target="_blank" rel="noreferrer">my blog</a></strong>, where I aim to share my knowledge with the world. Whenever possible, I make posts about the most diverse content.
           </p>
           <p>
-              Since them, I'm working as a Software Engineer in different companies, from different sizes and purposes, always learning and building solutions for the most diverse needs.
-              I'm always looking for new challenges and opportunities to grow as a professional.
+            Since then, I've been working as a Software Engineer at different companies, ranging in size and purpose, always learning and building solutions for the most diverse needs. 
+            I'm always looking for new challenges and opportunities to grow professionally.
           </p>
           <p>
-            <strong>I believe that education is the basis for human and living development focused on this! <span role="img" aria-label="hand">✊🏾</span></strong>
+            I believe that education is the basis for human and societal development, and I focus on this! <span role="img" aria-label="fist">✊🏾</span>
           </p>
           <p>
             If you want to see my complete curriculum, access the <strong><a href="https://resume.phbomfim.dev" target="_blank" rel="noreferrer">English</a></strong> or <strong><a href="https://curriculo.phbomfim.dev" target="_blank" rel="noreferrer">Portuguese</a></strong> version.
